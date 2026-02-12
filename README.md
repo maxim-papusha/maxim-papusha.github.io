@@ -2,6 +2,9 @@
 
 A blog about computational chemistry and cheminformatics built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
+> **⚠️ IMPORTANT**: To deploy this website, you need to enable GitHub Pages in your repository settings.  
+> See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed setup instructions.
+
 ## 🚀 Features
 
 - **Material Design**: Modern, responsive theme with light/dark mode
@@ -83,16 +86,16 @@ Marimo notebooks are reactive Python notebooks. To include them:
 
 The site is automatically deployed to GitHub Pages when changes are pushed to the `main` branch using GitHub Actions.
 
-### Setup GitHub Pages
+**⚠️ SETUP REQUIRED**: Before the site can be deployed, you must enable GitHub Pages in your repository settings. See [DEPLOYMENT.md](DEPLOYMENT.md) for complete setup instructions.
 
-1. Go to your repository settings
-2. Navigate to Pages → Source
-3. Select "GitHub Actions" as the source
+### Quick Setup
 
-The workflow will:
-- Build the MkDocs site
-- Deploy to GitHub Pages
-- Make it available at `https://maxim-papusha.github.io/`
+1. Go to **Settings → Pages** in your repository
+2. Set **Source** to **"GitHub Actions"**
+3. Push a commit or re-run the workflow
+4. Your site will be available at `https://maxim-papusha.github.io/`
+
+For detailed troubleshooting and technical information, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## 📄 License
 
