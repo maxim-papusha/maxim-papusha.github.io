@@ -83,16 +83,25 @@ Marimo notebooks are reactive Python notebooks. To include them:
 
 The site is automatically deployed to GitHub Pages when changes are pushed to the `main` branch using GitHub Actions.
 
-### Setup GitHub Pages
+### ⚠️ Important: Enable GitHub Pages First
 
-1. Go to your repository settings
-2. Navigate to Pages → Source
-3. Select "GitHub Actions" as the source
+**Before deployment can work, GitHub Pages must be enabled:**
+
+1. Go to [repository settings → Pages](https://github.com/maxim-papusha/maxim-papusha.github.io/settings/pages)
+2. Under "Build and deployment" → Source
+3. Select **"GitHub Actions"** as the source
+4. Save the settings
+
+Without this configuration, the deployment workflow will fail with a 404 error.
+
+### How It Works
 
 The workflow will:
 - Build the MkDocs site
 - Deploy to GitHub Pages
 - Make it available at `https://maxim-papusha.github.io/`
+
+For troubleshooting deployment issues, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## 📄 License
 
